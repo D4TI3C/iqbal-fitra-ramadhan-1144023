@@ -25,7 +25,9 @@ Saran
 
 Sebaiknya selalu diadakan praktik dan membaca dari referensi lain agar lebih baik lagi.
 
+==================================
 NAMA : IQBAL FITRA RAMADHAN
 NPM : 1144023
 KELAS : D4 TEKNIK INFORMATIKA 3C
 POLITEKNIK POS INDONESIA
+==================================
