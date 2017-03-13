@@ -1,162 +1,103 @@
 import time
-start_time = time.time()
-print("Menghitung nilai rumus matematika menggunakan bahasa Hawaii")
-i = raw_input("Masukan Nilai 1: ")
-q = raw_input("Masukan Nilai 2: ")
-b = raw_input("Masukan Nilai 3: ")
-a = raw_input("Masukan Nilai 4: ")
-l = raw_input("Masukan Nilai 5: ")
 
-if i == 'kekahi':
-	i=1
+print("Hitunglah ( a * b ) + ( c / d )")
+print("=====================")
+a = raw_input("Masukkan nilai a : ")
+b = raw_input("Masukkan nilai b : ")
+c = raw_input("Masukkan nilai c : ")
+d = raw_input("Masukkan nilai d : ")
+print("=====================")
 
-if i == 'elua':
-	i=2
+t1 = time.time()
 
-if i == 'ekolu':
-	i=3
+if a == 'satu':
+        a=1
+elif a == 'dua':
+        a=2
+elif a == 'tiga':
+        a=3
+elif a == 'empat':
+        a=4
+elif a == 'lima':
+        a=5
+elif a == 'enam':
+        a=6
+elif a == 'tujuh':
+        a=7
+elif a == 'delapan':
+        a=8
+elif a == 'sembilan':
+        a=9
+else :
+        a=0
 
-if i == 'eha':
-	i=4
+if b == 'satu':
+        b=1
+elif b == 'dua':
+        b=2
+elif b == 'tiga':
+        b=3
+elif b == 'empat':
+        b=4
+elif b == 'lima':
+        b=5
+elif b == 'enam':
+        b=6
+elif b == 'tujuh':
+        b=7
+elif b == 'delapan':
+        b=8
+elif b == 'sembilan':
+        b=9
+else :
+        b=0
 
-if i == 'elima':
-	i=5
+if c == 'satu':
+        c=1
+elif c == 'dua':
+        c=2
+elif c == 'tiga':
+        c=3
+elif c == 'empat':
+        c=4
+elif c == 'lima':
+        c=5
+elif c == 'enam':
+        c=6
+elif c == 'tujuh':
+        c=7
+elif c == 'delapan':
+        c=8
+elif c == 'sembilan':
+        c=9
+else :
+        c=0
 
-if i == 'eono':
-	i=6
+if d == 'satu':
+        d=1
+elif d == 'dua':
+        d=2
+elif d == 'tiga':
+        d=3
+elif d == 'empat':
+        d=4
+elif d == 'lima':
+        d=5
+elif d == 'enam':
+        d=6
+elif d == 'tujuh':
+        d=7
+elif d == 'delapan':
+        d=8
+elif d == 'sembilan':
+        d=9
+else :
+        d=0
 
-if i == 'ehiku':
-	i=7
 
-if i == 'ewalu':
-	i=8
+hasil = float((float(a)*float(b))+(float(c)/float(d)))
+print 'Hasil : (',a,'*',b,') + (',c,'/',d,') = ', hasil
 
-if i == 'eiwa':
-	i=9
-
-if i == 'ole':
-	i=0
-
-if q == 'kekahi':
-	q=1
-
-if q == 'elua':
-	q=2
-
-if q == 'ekolu':
-	q=3
-
-if q == 'eha':
-	q=4
-
-if q == 'elima':
-	q=5
-
-if q == 'eono':
-	q=6
-
-if q == 'ehiku':
-	q=7
-
-if q == 'ewalu':
-	q=8
-
-if q == 'eiwa':
-	q=9
-
-if q == 'ole':
-	q=0
-	
-if b == 'kekahi':
-	b=1
-
-if b == 'elua':
-	b=2
-
-if b == 'ekolu':
-	b=3
-
-if b == 'eha':
-	b=4
-
-if b == 'elima':
-	b=5
-
-if b == 'eono':
-	b=6
-
-if b == 'ehiku':
-	b=7
-
-if b == 'ewalu':
-	b=8
-
-if b == 'eiwa':
-	b=9
-
-if b == 'ole':
-	b=0
-	
-if a == 'kekahi':
-	a=1
-
-if a == 'elua':
-	a=2
-
-if a == 'ekolu':
-	a=3
-
-if a == 'eha':
-	a=4
-
-if a == 'elima':
-	a=5
-
-if a == 'eono':
-	a=6
-
-if a == 'ehiku':
-	a=7
-
-if a == 'ewalu':
-	a=8
-
-if a == 'eiwa':
-	a=9
-
-if a == 'ole':
-	a=0
-	
-if l == 'kekahi':
-	l=1
-
-if l == 'elua':
-	l=2
-
-if l == 'ekolu':
-	l=3
-
-if l == 'eha':
-	l=4
-
-if l == 'elima':
-	l=5
-
-if l == 'eono':
-	l=6
-
-if l == 'ehiku':
-	l=7
-
-if l == 'ewalu':
-	l=8
-
-if l == 'eiwa':
-	l=9
-
-if l == 'ole':
-	l=0
-	
-jumlah =(i*q)+(b/a-l) 
-print ("hasil" , jumlah) 
-print("time : %s detik " % (time.time() - start_time))
+t2 = time.time()
+time =  t2 - t1
+print 'Durasi Waktu : %s Detik'% time
